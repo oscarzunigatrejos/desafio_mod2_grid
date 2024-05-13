@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.mainGrid {
+    display: grid;
+    height: 100vh;
+    grid-template-areas:
+    'nav nav'
+    'menu section'
+    'footer footer';
+    grid-template-columns: 1fr 6fr;
+}
+
+nav {
+    grid-area: nav;
+    background-color: darkblue;
+    display: flex;
+    height: 10vh;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    align-items: center;
+}
+
+menu {
+    grid-area: menu;
+    background-color: lightgray;
+    height: 85vh;
+    display: flex;
+    flex-direction: column;
+}
+
+menu li {
+    margin: 5px;
+
+}
+
+section {
+    grid-area: section;
+    background-color: gray;
+    height: 85vh;
+}
+
+footer {
+    grid-area: footer;
+    background-color: white;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    align-items: center;
+}
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: space-around;
+}
+
+.productoitem {
+    width: 50vh;
+    border: 1px solid black;
+    background-color: white;
+    justify-content: column;
+    margin: 2px;
+    
+}
+
+.img_prod {
+    width: 100%;
+}
+
+.nombre_prod {
+    padding: 3px;
+}
+
+.precio {
+    font-size: 12px;
+    padding: 3px;
+}
+
+.footer_prod {
+    display: flex;
+    background-color: blue;
+    height: 5vh;
+    color: white;
+    font-size: 14px;
+    justify-content: center;
+    align-items: center;
+}
